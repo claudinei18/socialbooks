@@ -1,9 +1,17 @@
 package com.socialbooks.socialbooks.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class Comentario {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comentarios_seq_gen")
+//    @SequenceGenerator(name = "comentarios_seq_gen", sequenceName = "comentarios_id_seq")
     private Long id;
 
     private String texto;
@@ -11,6 +19,11 @@ public class Comentario {
     private String usuario;
 
     private Date data;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "LIVRO_ID")
+    @JsonIgnore
+    private Livro livro;
 
     public Long getId() {
         return id;
@@ -42,5 +55,13 @@ public class Comentario {
 
     public void setData(Date data) {
         this.data = data;
+    }
+
+    public Livro getLivro() {
+        return livro;
+    }
+
+    public void setLivro(Livro livro) {
+        this.livro = livro;
     }
 }

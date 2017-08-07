@@ -1,5 +1,6 @@
 package com.socialbooks.socialbooks.resources;
 
+import com.socialbooks.socialbooks.domain.Comentario;
 import com.socialbooks.socialbooks.domain.Livro;
 import com.socialbooks.socialbooks.services.LivrosService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,5 +55,23 @@ public class LivrosResources {
         livrosService.atualizar(livro);
 
         return ResponseEntity.noContent().build();
+    }
+
+    @RequestMapping(value = "/{id}/comentarios", method = RequestMethod.POST)
+    public ResponseEntity<Void> adicionarComentario(@PathVariable("id") Long livroId,
+                                    @RequestBody Comentario comentario){
+
+        livrosService.salvarComentario(livroId, comentario);
+
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().build().toUri();
+
+        return ResponseEntity.created(uri).build();
+    }
+
+    @RequestMapping(value = "/{id}/comentarios", method = RequestMethod.GET)
+    public ResponseEntity<List<Comentario>> listarComentarios(@PathVariable("id") Long livroId) {
+        List<Comentario> comentarios = livrosService.listarComentarios(livroId);
+
+        return ResponseEntity.status(HttpStatus.OK).body(comentarios);
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="socialbooks@localhost">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.3">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
     <root id="1"/>
     <database id="2" parent="1" name="socialbooks">
       <ObjectId>17086</ObjectId>
@@ -27,8 +27,8 @@
     </database>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-08-04.09:13:19.037</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1088</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-08-07.10:44:53.547</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1150</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -47,59 +47,44 @@
     <schema id="14" parent="2" name="information_schema">
       <ObjectId>12121</ObjectId>
     </schema>
-    <sequence id="15" parent="9" name="livro_id_seq">
-      <ObjectId>17098</ObjectId>
-      <StateNumber>1088</StateNumber>
+    <sequence id="15" parent="9" name="livros_id_seq">
+      <ObjectId>17258</ObjectId>
+      <StateNumber>1149</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <table id="16" parent="9" name="livro">
-      <ObjectId>17100</ObjectId>
-      <StateNumber>1088</StateNumber>
+      <ObjectId>17260</ObjectId>
+      <StateNumber>1150</StateNumber>
     </table>
     <column id="17" parent="16" name="id">
       <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1088</StateNumber>
-      <SequenceName>livro_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;livro_id_seq&apos;::regclass)</DefaultExpression>
+      <DataType>integer|0</DataType>
+      <StateNumber>1150</StateNumber>
     </column>
-    <column id="18" parent="16" name="autor">
+    <column id="18" parent="16" name="nome">
       <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
-      <StateNumber>1088</StateNumber>
+      <DataType>text|0</DataType>
+      <StateNumber>1150</StateNumber>
     </column>
-    <column id="19" parent="16" name="editora">
+    <column id="19" parent="16" name="publicacao">
       <Position>3</Position>
-      <DataType>varchar(255)|0</DataType>
-      <StateNumber>1088</StateNumber>
+      <DataType>date|0</DataType>
+      <StateNumber>1150</StateNumber>
     </column>
-    <column id="20" parent="16" name="nome">
+    <column id="20" parent="16" name="editora">
       <Position>4</Position>
-      <DataType>varchar(255)|0</DataType>
-      <StateNumber>1088</StateNumber>
+      <DataType>text|0</DataType>
+      <StateNumber>1150</StateNumber>
     </column>
-    <column id="21" parent="16" name="publicacao">
+    <column id="21" parent="16" name="resumo">
       <Position>5</Position>
-      <DataType>timestamp|0</DataType>
-      <StateNumber>1088</StateNumber>
+      <DataType>text|0</DataType>
+      <StateNumber>1150</StateNumber>
     </column>
-    <column id="22" parent="16" name="resumo">
+    <column id="22" parent="16" name="autor">
       <Position>6</Position>
-      <DataType>varchar(255)|0</DataType>
-      <StateNumber>1088</StateNumber>
+      <DataType>text|0</DataType>
+      <StateNumber>1150</StateNumber>
     </column>
-    <index id="23" parent="16" name="livro_pkey">
-      <ObjectId>17107</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="24" parent="16" name="livro_pkey">
-      <ObjectId>17108</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>livro_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>

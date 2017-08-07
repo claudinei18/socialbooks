@@ -13,6 +13,8 @@ public class Livro {
     @JsonInclude(Include.NON_NULL)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "livros_seq_gen")
+//    @SequenceGenerator(name = "livros_seq_gen", sequenceName = "livros_id_seq")
     private Long id;
 
     @JsonInclude(Include.NON_NULL)
@@ -28,8 +30,8 @@ public class Livro {
     private String resumo;
 
     @JsonInclude(Include.NON_NULL)
-    @Transient
-    private List<Comentario> comentarioList;
+    @OneToMany(mappedBy = "livro")
+    private List<Comentario> comentarios;
 
     @JsonInclude(Include.NON_NULL)
     private String autor;
@@ -83,11 +85,11 @@ public class Livro {
     }
 
     public List<Comentario> getComentarioList() {
-        return comentarioList;
+        return comentarios;
     }
 
-    public void setComentarioList(List<Comentario> comentarioList) {
-        this.comentarioList = comentarioList;
+    public void setComentarioList(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
     }
 
     public String getAutor() {
