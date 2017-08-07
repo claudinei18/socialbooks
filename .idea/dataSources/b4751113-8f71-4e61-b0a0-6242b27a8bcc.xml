@@ -27,8 +27,8 @@
     </database>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-08-07.10:44:53.547</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1150</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-08-07.11:53:43.146</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1154</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -47,44 +47,78 @@
     <schema id="14" parent="2" name="information_schema">
       <ObjectId>12121</ObjectId>
     </schema>
-    <sequence id="15" parent="9" name="livros_id_seq">
-      <ObjectId>17258</ObjectId>
-      <StateNumber>1149</StateNumber>
+    <sequence id="15" parent="9" name="comentarios_id_seq">
+      <ObjectId>17278</ObjectId>
+      <StateNumber>1154</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <table id="16" parent="9" name="livro">
-      <ObjectId>17260</ObjectId>
-      <StateNumber>1150</StateNumber>
+    <sequence id="16" parent="9" name="livros_id_seq">
+      <ObjectId>17276</ObjectId>
+      <StateNumber>1154</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="17" parent="9" name="comentario">
+      <ObjectId>17286</ObjectId>
+      <StateNumber>1154</StateNumber>
     </table>
-    <column id="17" parent="16" name="id">
+    <table id="18" parent="9" name="livro">
+      <ObjectId>17280</ObjectId>
+      <StateNumber>1154</StateNumber>
+    </table>
+    <column id="19" parent="17" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1150</StateNumber>
+      <StateNumber>1154</StateNumber>
     </column>
-    <column id="18" parent="16" name="nome">
+    <column id="20" parent="17" name="texto">
       <Position>2</Position>
       <DataType>text|0</DataType>
-      <StateNumber>1150</StateNumber>
+      <StateNumber>1154</StateNumber>
     </column>
-    <column id="19" parent="16" name="publicacao">
+    <column id="21" parent="17" name="usuario">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1154</StateNumber>
+    </column>
+    <column id="22" parent="17" name="data">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>1154</StateNumber>
+    </column>
+    <column id="23" parent="17" name="livro_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>1154</StateNumber>
+    </column>
+    <column id="24" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>1154</StateNumber>
+    </column>
+    <column id="25" parent="18" name="nome">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1154</StateNumber>
+    </column>
+    <column id="26" parent="18" name="publicacao">
       <Position>3</Position>
       <DataType>date|0</DataType>
-      <StateNumber>1150</StateNumber>
+      <StateNumber>1154</StateNumber>
     </column>
-    <column id="20" parent="16" name="editora">
+    <column id="27" parent="18" name="editora">
       <Position>4</Position>
       <DataType>text|0</DataType>
-      <StateNumber>1150</StateNumber>
+      <StateNumber>1154</StateNumber>
     </column>
-    <column id="21" parent="16" name="resumo">
+    <column id="28" parent="18" name="resumo">
       <Position>5</Position>
       <DataType>text|0</DataType>
-      <StateNumber>1150</StateNumber>
+      <StateNumber>1154</StateNumber>
     </column>
-    <column id="22" parent="16" name="autor">
+    <column id="29" parent="18" name="autor">
       <Position>6</Position>
       <DataType>text|0</DataType>
-      <StateNumber>1150</StateNumber>
+      <StateNumber>1154</StateNumber>
     </column>
   </database-model>
 </dataSource>

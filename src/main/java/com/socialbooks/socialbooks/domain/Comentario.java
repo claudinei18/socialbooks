@@ -9,9 +9,9 @@ import java.util.Date;
 public class Comentario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comentarios_seq_gen")
-//    @SequenceGenerator(name = "comentarios_seq_gen", sequenceName = "comentarios_id_seq")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comentarios_seq_gen")
+    @SequenceGenerator(name = "comentarios_seq_gen", sequenceName = "comentarios_id_seq")
     private Long id;
 
     private String texto;

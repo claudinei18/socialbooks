@@ -1,6 +1,6 @@
 package com.socialbooks.socialbooks.handler;
 
-import com.socialbooks.socialbooks.DetalhesErro;
+import com.socialbooks.socialbooks.domain.DetalhesErro;
 import com.socialbooks.socialbooks.services.exceptions.LivroNaoEncontradoException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

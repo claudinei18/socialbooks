@@ -12,9 +12,9 @@ public class Livro {
 
     @JsonInclude(Include.NON_NULL)
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "livros_seq_gen")
-//    @SequenceGenerator(name = "livros_seq_gen", sequenceName = "livros_id_seq")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "livros_seq_gen")
+    @SequenceGenerator(name = "livros_seq_gen", sequenceName = "livros_id_seq")
     private Long id;
 
     @JsonInclude(Include.NON_NULL)
