@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="testdb" uuid="fd748c76-ebee-4aa4-904a-351630e1baad">
+      <database-info product="H2" version="1.4.192 (2016-05-26)" jdbc-version="4.0" driver-name="H2 JDBC Driver" driver-version="1.4.192 (2016-05-26)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>TESTDB:</introspection-schemas>
+    </data-source>
+    <data-source name="socialbooks@localhost" uuid="b4751113-8f71-4e61-b0a0-6242b27a8bcc">
+      <database-info product="PostgreSQL" version="9.5.7" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>claudinei</user-name>
+      <introspection-schemas>socialbooks:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>

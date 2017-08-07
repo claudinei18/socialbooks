@@ -1,0 +1,5 @@
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/SocialbooksApplication.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/domain/Livro.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/repository/LivrosRepository.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/domain/Comentario.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/resources/LivrosResources.java
