@@ -27,8 +27,8 @@
     </database>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-08-07.11:53:43.146</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1154</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-08-08.09:21:18.392</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1165</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -58,8 +58,8 @@
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <table id="17" parent="9" name="comentario">
-      <ObjectId>17286</ObjectId>
-      <StateNumber>1154</StateNumber>
+      <ObjectId>17299</ObjectId>
+      <StateNumber>1165</StateNumber>
     </table>
     <table id="18" parent="9" name="livro">
       <ObjectId>17280</ObjectId>
@@ -68,27 +68,27 @@
     <column id="19" parent="17" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1165</StateNumber>
     </column>
     <column id="20" parent="17" name="texto">
       <Position>2</Position>
       <DataType>text|0</DataType>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1165</StateNumber>
     </column>
     <column id="21" parent="17" name="usuario">
       <Position>3</Position>
       <DataType>text|0</DataType>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1165</StateNumber>
     </column>
     <column id="22" parent="17" name="data">
       <Position>4</Position>
-      <DataType>date|0</DataType>
-      <StateNumber>1154</StateNumber>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>1165</StateNumber>
     </column>
     <column id="23" parent="17" name="livro_id">
       <Position>5</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1154</StateNumber>
+      <StateNumber>1165</StateNumber>
     </column>
     <column id="24" parent="18" name="id">
       <Position>1</Position>

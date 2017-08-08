@@ -15,6 +15,6 @@ CREATE TABLE comentario(
    id INTEGER,
    texto text,
    usuario text,
-   data date,
+   data timestamp,
    LIVRO_ID integer
 );
