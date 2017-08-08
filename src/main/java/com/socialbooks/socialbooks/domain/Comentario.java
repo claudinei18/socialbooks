@@ -1,8 +1,13 @@
 package com.socialbooks.socialbooks.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
@@ -14,10 +19,16 @@ public class Comentario {
     @SequenceGenerator(name = "comentarios_seq_gen", sequenceName = "comentarios_id_seq")
     private Long id;
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @NotEmpty(message = "Comentário deve ser preenchido.")
+    @Size(max = 1500, message = "Comentário não pode ter mais de 1500 caracteres.")
+    @JsonProperty("comentario")
     private String texto;
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String usuario;
 
+    @JsonFormat(pattern = "dd/MM/yyyy'T'HH:mm:ssZ")
     private Date data;
 
     @ManyToOne(fetch = FetchType.LAZY)
