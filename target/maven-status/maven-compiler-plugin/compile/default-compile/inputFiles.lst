@@ -1,5 +1,17 @@
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/domain/DetalhesErro.java
 /home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/SocialbooksApplication.java
 /home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/domain/Livro.java
 /home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/repository/LivrosRepository.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/config/WebSecurityConfig.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/handler/ResourceExceptionHandler.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/repository/ComentariosRespository.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/services/exceptions/LivroNaoEncontradoException.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/services/exceptions/AutorExistenteException.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/services/LivrosService.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/resources/AutoresResource.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/repository/AutoresRepository.java
 /home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/domain/Comentario.java
 /home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/resources/LivrosResources.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/services/exceptions/AutorNaoEncontradoException.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/services/AutoresService.java
+/home/claudinei/Projects/socialbooks/src/main/java/com/socialbooks/socialbooks/domain/Autor.java

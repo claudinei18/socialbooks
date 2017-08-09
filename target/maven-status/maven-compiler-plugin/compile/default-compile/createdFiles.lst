@@ -1,5 +1,5 @@
 com/socialbooks/socialbooks/SocialbooksApplication.class
-com/socialbooks/socialbooks/repository/LivrosRepository.class
 com/socialbooks/socialbooks/domain/Comentario.class
 com/socialbooks/socialbooks/resources/LivrosResources.class
+com/socialbooks/socialbooks/repository/LivrosRepository.class
 com/socialbooks/socialbooks/domain/Livro.class
