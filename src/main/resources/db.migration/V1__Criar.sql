@@ -28,3 +28,5 @@ CREATE TABLE comentario(
    data timestamp,
    LIVRO_ID integer not null references livro(id)
 );
+
+-- heroku pg:psql --app socialbooks1 < V1__Criar.sql
